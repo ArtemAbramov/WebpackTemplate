@@ -1,0 +1,43 @@
+.header {
+  .menu-burger {
+    display: none;
+    margin-top: 1px;
+    margin-left: 16px;
+    margin-right: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    @media only screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+
+  .menu-burger span {
+    position: relative;
+    display: block;
+    margin-bottom: 4px;
+    width: 21px;
+    height: 2px;
+    background-color: #e8e8e8;
+    transition: 1s;
+  }
+
+  .menu-burger span:nth-child(2) {
+    transition: 1s ease-in;
+  }
+
+  .burger-close span:first-child {
+    transform: translateY(6px) rotateZ(45deg);
+  }
+
+  .burger-close span:last-child {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .burger-close span:nth-child(2) {
+    opacity: 0;
+    transition: 0s;
+  }
+}
